@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campaign Details</title>
+    <link rel="stylesheet" href="campaign detail.css">
+</head>
+<body>
+    <div class="campaignDetailContainer">
+        <div class="campaignDetailCard">
+           <h2>Campaign Details</h2>
+           <div class="sub-container">
+                <div class="subcontainer-row-section">
+                    <div class="heading-section">
+                        <label for="keyMessaging">Key Messaging</label>
+                    </div>
+                    <div class="textarea-section">
+                        <p class="description">What is the message you want to deliver and is there any other information you would like to share with the influencers?</p>
+                        <div class="textarea-container">    
+                            <textarea id="keyMessaging" placeholder="Provide influencers any key messaging that should be included to their content."></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="subcontainer-row-section">
+                    <div class="heading-section">
+                        <label for="contentDeliverables">Content Deliverables</label>
+                    </div>
+                    <div class="textarea-section">
+                        <p class="description">Select the content deliverables for each influencers in this campaign.</p>
+                        <div class="uploading-cards-container">
+                            <div class="uploading-card">
+                                <input type="checkbox" />
+                                <div class="static-post">
+                                    <img src="images/Static Post Small Icon.png" alt="">
+                                </div>
+                                <div class="change-amount">
+                                    <div class="change-btn decrease-btn">-</div>
+                                    <div>00</div>
+                                    <div class="change-btn increase-btn">+</div>
+                                </div>
+                                <div class="uploading-card-type">
+                                    <span>Static Post</span> 
+                                </div>
+                            </div>
+                            <div class="uploading-card">
+                                <input type="checkbox" />
+                                <div class="static-post">
+                                    <img src="images/Carousel Post Small Icon.png" alt="">
+                                </div>
+                                <div class="change-amount">
+                                    <div class="change-btn decrease-btn">-</div>
+                                    <div>00</div>
+                                    <div class="change-btn increase-btn">+</div>
+                                </div>
+                                <div class="uploading-card-type">
+                                    <span>Carousel Post</span> 
+                                </div>
+                            </div>
+                            <div class="uploading-card">
+                                <input type="checkbox" />
+                                <div class="static-post">
+                                    <img src="images/Static Story Small Icon.png" alt="">
+                                </div>
+                                <div class="change-amount">
+                                    <div class="change-btn decrease-btn">-</div>
+                                    <div>00</div>
+                                    <div class="change-btn increase-btn">+</div>
+                                </div>
+                                <div class="uploading-card-type">
+                                    <span>Static Story</span> 
+                                </div>
+                            </div>
+                            <div class="uploading-card">
+                                <input type="checkbox" />
+                                <div class="static-post">
+                                    <img src="images/Video Story Small Icon.png" alt="">
+                                </div>
+                                <div class="change-amount">
+                                    <div class="change-btn decrease-btn">-</div>
+                                    <div>00</div>
+                                    <div class="change-btn increase-btn">+</div>
+                                </div>
+                                <div class="uploading-card-type">
+                                    <span>Video Story</span> 
+                                </div>
+                            </div>
+                            <div class="uploading-card">
+                                <input type="checkbox" />
+                                <div class="static-post">
+                                    <img src="images/Reels Small Icon.png" alt="">
+                                </div>
+                                <div class="change-amount">
+                                    <div class="change-btn decrease-btn">-</div>
+                                    <div>00</div>
+                                    <div class="change-btn increase-btn">+</div>
+                                </div>
+                                <div class="uploading-card-type">
+                                    <span>Reels</span> 
+                                </div>
+                            </div>
+                            <div class="uploading-card">
+                                <input type="checkbox" />
+                                <div class="static-post">
+                                    <img src="images/IG Video.png" alt="">
+                                </div>
+                                <div class="change-amount">
+                                    <div class="change-btn decrease-btn">-</div>
+                                    <div>00</div>
+                                    <div class="change-btn increase-btn">+</div>
+                                </div>
+                                <div class="uploading-card-type">
+                                    <span>IG Video</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="subcontainer-row-section">
+                    <div class="heading-section">
+                        <label for="campaignTimeline">Campaign Timeline</label>
+                    </div>
+                    <div class="textarea-section">
+                        <p class="description">Assign a campaign start date and end date. Most campaigns takes about 2-3 months to complete.</p>
+                        <div class="textarea-container">
+                            <div class="campaign-timeline">
+                                <div class="flex-col">
+                                    <label for="startDate" class="bold">Start Date</label>
+                                    <input type="text" id="startDate" placeholder="Campaign Start Date" />
+                                </div>
+                                <div class="flex-col">
+                                    <label for="endDate" class="bold">End Date</label>
+                                    <input type="text" id="endDate" placeholder="Campaign End Date" />
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+                <div class="subcontainer-row-section">
+                    <div class="heading-section">
+                        <label for="contentSubmission">Content Submission Deadline</label>
+                    </div>
+                    <div class="textarea-section">
+                        <p class="description">Please assign a content submission date. This should be atleast 1 week before you expect your content to be posted.</p>
+                        <div class="textarea-container">
+                            <div class="campaign-timeline">
+                                <div class="flex-col">
+                                    <input type="text" id="contentSubmission" placeholder="Sumbission Deadline" />
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+                <div class="subcontainer-row-section">
+                    <div class="heading-section">
+                        <label for="ImportantDates">Important Dates</label>
+                    </div>
+                    <div class="textarea-section">
+                        <p class="description">Please share any important dates that influencers should be aware of. For example, if there is a launch date, event or specific dates that content should go live.</p>
+                        <div class="textarea-container">    
+                            <textarea id="ImportantDates" placeholder="Share any important dates."></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="subcontainer-row-section">
+                    <div class="heading-section">
+                        <label for="requiredQuestion">Required Question For Influencers</label>
+                    </div>
+                    <div class="textarea-section">
+                        <p class="description">Get to know influencers better by asking them questions that they will answer as part of applying to your camaign. Eg. Have you used our products? Do you have any pets? What is your favourite activity? (1 - 2 Recommended)</p>
+                        <div class="textarea-container">
+                                <div class="required-question-section">
+                                <div class="add-more-container">
+                                    <div class="add-more-content">
+                                        <span class="add-more-image"><img src="images/add-more.png" /></span><span>Add More</span>
+                                    </div>
+                                </div>    
+                                <textarea id="requiredQuestion" placeholder="What makes you ideal fit for this campaign?"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="subcontainer-row-section">
+                    <div class="heading-section">
+                        <label for="requestedInformation">Requested Information</label>
+                    </div>
+                    <div class="textarea-section">
+
+                        <p class="description">Select additional information you are rquesting from influencers for this campaign. This will only be available once you accept influencers into your campaign.</p>
+                        <div class="textarea-container">
+
+                            <div class="requested-information-container flex-col">
+                                <div>
+                                    <input type="checkbox" id="mailing" />
+                                    <label for="mailing">Mailing Address(Used for Shipping Products)</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="contact" />
+                                    <label for="contact">Contact Phone Number</label>
+                                </div=>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="subcontainer-row-section">
+                    <div class="heading-section">
+                        <label for="additionalRequirements">Additional Requirements</label>
+                    </div>
+                    <div class="textarea-section">
+
+                        <p class="description">Select any additional requirements that influencers should know about for this campaign.</p>
+                        <div class="textarea-container">
+
+                            <div class="requested-information-container flex-col">
+                                <div>
+                                    <input type="checkbox" id="ad" />
+                                    <label for="ad">Disclose this is a paid collaboration by using <span class="bold">#ad #sponsered</span></label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="linkSharing" />
+                                    <label for="linkSharing">Share link in bio with each post and swipe up with each story <input type="text" placeholder="www.yourwebsite.com"/></label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="hashtags" />
+                                    <label for="hashtags">Use the following hashtags <input type="text" placeholder="#brand"/></label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="tagAccount" />
+                                    <label for="tagAccount">Tag the following accounts <input type="text" placeholder="@brand"/></label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="useTag" />
+                                    <label for="useTag">Use #Embold or tag @embold.co <input type="text" placeholder="@brand"/></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="subcontainer-row-section">
+                    <div class="heading-section">
+                        <label for="similarContent">Similar Content</label>
+                    </div>
+                    <div class="textarea-section">
+                        <p class="description">Provide some inspiration  to influencers by selectiong content you like from our past campaigns.</p>
+                        <div class="textarea-container">
+                            <div class="similar-content-container">
+                                <div class="upload-image-container">
+                                    <img src="images/plus.png" alt="upload" />
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+                <div class="subcontainer-row-section">
+                    <div class="heading-section">
+                        <label for="additionalAttachments">Additional Attachments</label>
+                    </div>
+                    <div class="textarea-section">
+                        <p class="description">Upload any additional attachments that may be helpful for the influencers.</p>
+                        <div class="textarea-container">
+                            <div class="similar-content-container">
+                                <div class="upload-image-container">
+                                    <img src="images/plus.png" alt="upload" />
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </div>
+</body>
+</html>

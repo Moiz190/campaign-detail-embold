@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("./quicksand/Quicksand-Medium.ttf");
+}
+img {
+  width: 100%;
+}
+
+.pb-1, .campaignDetailContainer .campaignDetailCard h2 {
+  padding-bottom: 1rem;
+}
+
+.border-bottom-lightgray, .campaignDetailContainer .campaignDetailCard .sub-container .subcontainer-row-section, .campaignDetailContainer .campaignDetailCard h2 {
+  border-bottom: 1px solid rgba(108, 108, 108, 0.2);
+}
+
+.absolute {
+  position: absolute;
+  right: 0;
+}
+
+.flex-col, .campaignDetailContainer .campaignDetailCard .sub-container .subcontainer-row-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+body {
+  font-family: "Quicksand";
+}
+
+.campaignDetailContainer {
+  width: 100%;
+  padding: 2rem 0;
+}
+.campaignDetailContainer .campaignDetailCard {
+  max-width: 1350px;
+  width: 80%;
+  margin: auto;
+  padding: 1rem 1.5rem;
+  box-shadow: 1px 1px 7px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+.campaignDetailContainer .campaignDetailCard .heading-section {
+  padding-bottom: 0.2rem;
+}
+.campaignDetailContainer .campaignDetailCard .heading-section label {
+  color: #ff6f58;
+  font-weight: 600;
+  padding-bottom: 0.3rem;
+  font-size: 1.1rem;
+}
+.campaignDetailContainer .campaignDetailCard textarea {
+  width: 100%;
+  resize: none;
+  height: 5rem;
+  border-radius: 3px;
+  padding: 0.5rem;
+}
+.campaignDetailContainer .campaignDetailCard textarea:focus {
+  outline: 0;
+}
+.campaignDetailContainer .campaignDetailCard h2 {
+  color: #ff6f58;
+}
+.campaignDetailContainer .campaignDetailCard .sub-container .subcontainer-row-section {
+  padding: 1rem 0 2rem 0;
+}
+.campaignDetailContainer .campaignDetailCard .sub-container .subcontainer-row-section .textarea-section {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1024px) {
+  .campaignDetailContainer .campaignDetailCard .sub-container .subcontainer-row-section .textarea-section {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 640px) {
+  .campaignDetailContainer .campaignDetailCard .sub-container .subcontainer-row-section .textarea-section {
+    font-size: 0.8rem;
+  }
+}
+.campaignDetailContainer .campaignDetailCard .sub-container .subcontainer-row-section .textarea-section .description {
+  width: 35%;
+}
+@media (max-width: 1024px) {
+  .campaignDetailContainer .campaignDetailCard .sub-container .subcontainer-row-section .textarea-section .description {
+    width: 100%;
+    padding-bottom: 0.7rem;
+  }
+}
+.campaignDetailContainer .campaignDetailCard .sub-container .subcontainer-row-section .textarea-section .textarea-container {
+  width: 60%;
+}
+@media (max-width: 1024px) {
+  .campaignDetailContainer .campaignDetailCard .sub-container .subcontainer-row-section .textarea-section .textarea-container {
+    width: 100%;
+  }
+}
+.campaignDetailContainer .campaignDetailCard .sub-container .subcontainer-row-section .textarea-section .uploading-cards-container {
+  width: 60%;
+  display: flex;
+  overflow-x: scroll;
+  padding-bottom: 1rem;
+}
+@media (max-width: 1024px) {
+  .campaignDetailContainer .campaignDetailCard .sub-container .subcontainer-row-section .textarea-section .uploading-cards-container {
+    width: 100%;
+  }
+}
+.campaignDetailContainer .campaignDetailCard .sub-container .subcontainer-row-section .textarea-section .uploading-cards-container .uploading-card {
+  height: 150px;
+  min-width: 130px;
+  border: 2px solid rgba(0, 0, 0, 0.496);
+  border-radius: 18px;
+  position: relative;
+  margin-right: 1.3rem;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.5);
+}
+.campaignDetailContainer .campaignDetailCard .sub-container .subcontainer-row-section .textarea-section .uploading-cards-container .uploading-card input[type=checkbox] {
+  position: absolute;
+  right: 0.7rem;
+  top: 0.7rem;
+}
+.campaignDetailContainer .campaignDetailCard .sub-container .subcontainer-row-section .textarea-section .uploading-cards-container .uploading-card .static-post {
+  width: 2.5rem;
+  position: absolute;
+  top: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.campaignDetailContainer .campaignDetailCard .sub-container .subcontainer-row-section .textarea-section .uploading-cards-container .uploading-card .change-amount {
+  position: absolute;
+  display: flex;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.campaignDetailContainer .campaignDetailCard .sub-container .subcontainer-row-section .textarea-section .uploading-cards-container .uploading-card .change-amount .change-btn {
+  background-color: black;
+  color: white;
+  text-align: center;
+  width: 1.1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.campaignDetailContainer .campaignDetailCard .sub-container .subcontainer-row-section .textarea-section .uploading-cards-container .uploading-card .change-amount .increase-btn {
+  margin-left: 0.2rem;
+}
+.campaignDetailContainer .campaignDetailCard .sub-container .subcontainer-row-section .textarea-section .uploading-cards-container .uploading-card .change-amount .decrease-btn {
+  margin-right: 0.2rem;
+}
+.campaignDetailContainer .campaignDetailCard .sub-container .subcontainer-row-section .textarea-section .uploading-cards-container .uploading-card .uploading-card-type {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid black;
+  padding: 0.3rem 0;
+}
+.campaignDetailContainer .campaignDetailCard .sub-container .subcontainer-row-section .textarea-section .campaign-timeline {
+  display: flex;
+}
+@media (max-width: 640px) {
+  .campaignDetailContainer .campaignDetailCard .sub-container .subcontainer-row-section .textarea-section .campaign-timeline {
+    flex-direction: column;
+  }
+  .campaignDetailContainer .campaignDetailCard .sub-container .subcontainer-row-section .textarea-section .campaign-timeline :first-child {
+    margin-bottom: 0.5rema;
+  }
+}
+.campaignDetailContainer .campaignDetailCard .sub-container .subcontainer-row-section .textarea-section .campaign-timeline :first-child {
+  margin-right: 4rem;
+}
+@media (max-width: 640px) {
+  .campaignDetailContainer .campaignDetailCard .sub-container .subcontainer-row-section .textarea-section .campaign-timeline :first-child {
+    margin-right: 0;
+  }
+}
+.campaignDetailContainer .campaignDetailCard .sub-container .subcontainer-row-section .textarea-section .campaign-timeline label {
+  margin-bottom: 0.5rem;
+}
+.campaignDetailContainer .campaignDetailCard .sub-container .subcontainer-row-section .textarea-section .campaign-timeline input {
+  padding: 0.7rem 1rem;
+  border-radius: 3px;
+  border: 1px solid gray;
+}
+.campaignDetailContainer .campaignDetailCard .sub-container .subcontainer-row-section .textarea-section .required-question-section .add-more-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 0.2rem;
+  font-weight: bold;
+}
+.campaignDetailContainer .campaignDetailCard .sub-container .subcontainer-row-section .textarea-section .required-question-section .add-more-container .add-more-content {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.campaignDetailContainer .campaignDetailCard .sub-container .subcontainer-row-section .textarea-section .required-question-section .add-more-container .add-more-content .add-more-image {
+  width: 1rem;
+  padding-top: 0.3rem;
+  margin-right: 0.3rem;
+}
+.campaignDetailContainer .campaignDetailCard .sub-container .subcontainer-row-section .textarea-section .requested-information-container > div {
+  margin-bottom: 0.3rem;
+}
+.campaignDetailContainer .campaignDetailCard .sub-container .subcontainer-row-section .textarea-section .requested-information-container input[type=checkbox] {
+  margin-right: 0.3rem;
+}
+.campaignDetailContainer .campaignDetailCard .sub-container .subcontainer-row-section .textarea-section .similar-content-container .upload-image-container {
+  cursor: pointer;
+  width: 3rem;
+  padding: 1rem;
+  background-color: rgb(217, 217, 217);
+}/*# sourceMappingURL=campaign detail.css.map */
